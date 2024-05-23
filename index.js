@@ -19,7 +19,6 @@ darkModeBtn.addEventListener('click', function() {
 submitBtn.addEventListener('submit', catSubmit)
 
 
-
 // CallBack Functions
 function darkMode(){
  document.body.style.backgroundColor = "black"  
@@ -60,3 +59,4 @@ async function gettingDataFromJson(){
     .then(data => { fillingCatsAray = data
 })
 }
+
