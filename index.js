@@ -35,7 +35,7 @@ function catSubmit(data){
     data.preventDefault()
     const theCatSubmit = submitBtn.querySelector("#findCat").value
     gettingDataFromJson()
-    const thefinding = fillingCatsAray.find(catInArray => catInArray.breed === theCatSubmit)
+    const thefinding = fillingCatsAray.find(catInArray => catInArray.breed.toLowerCase() === theCatSubmit.toLowerCase())
 
 
     const breedOFCat = document.getElementById("breed-Cat")
